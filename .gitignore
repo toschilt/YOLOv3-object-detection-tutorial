@@ -1,0 +1,4 @@
+*.h5
+.weights
+__pycache__
+*.weights

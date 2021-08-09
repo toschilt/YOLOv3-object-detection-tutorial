@@ -34,7 +34,7 @@ monitor = {"top": 40, "left": 0, "width": 1080, "height": 1080}
 class YOLO(object):
     _defaults = {
         #"model_path": 'logs/ep050-loss21.173-val_loss19.575.h5',
-        "model_path": 'logs/trained_weights_final.h5',
+        "model_path": 'model_data/yolo_weights.h5',
         "anchors_path": 'model_data/yolo_anchors.txt',
         "classes_path": '4_CLASS_test_classes.txt',
         "score" : 0.3,

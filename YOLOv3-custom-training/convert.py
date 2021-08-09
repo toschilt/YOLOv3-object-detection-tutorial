@@ -8,7 +8,7 @@ import argparse
 import configparser
 import io
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 from collections import defaultdict
 
 import numpy as np

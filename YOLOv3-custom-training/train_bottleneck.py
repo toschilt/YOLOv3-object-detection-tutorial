@@ -2,7 +2,7 @@
 Retrain the YOLO model for your own dataset.
 """
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 import numpy as np
 import keras.backend as K
@@ -16,9 +16,9 @@ from yolo3.utils import get_random_data
 
 
 def _main():
-    annotation_path = '4_CLASS_test.txt'
+    annotation_path = '1_CLASS_test.txt'
     log_dir = 'logs/'
-    classes_path = '4_CLASS_test_classes.txt'
+    classes_path = '1_CLASS_test_classes.txt'
     anchors_path = 'model_data/yolo_anchors.txt'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
